@@ -4,7 +4,7 @@ import { resArtistListTypes, resArtistDetailTypes, resArtworkListTypes, resArtwo
 export const UseApi = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://api.wwweb.kr/api'
+    baseUrl: 'http://www-application-load-balancer-1941995092.ap-northeast-2.elb.amazonaws.com'
   }),
   endpoints: (builder) => ({
     artistList: builder.query<resArtistListTypes, void>({
